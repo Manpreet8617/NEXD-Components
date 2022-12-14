@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+	position: relative;
+	margin: 200px auto;
+	width: 300px;
+	height: 300px;
+	perspective: 500px;
+}
+
+.cube {
+	width: inherit;
+	height: inherit;
+	transform-style: preserve-3d;
+}
+
+.side {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	/* border: 5px solid #fff; */
+	font: normal 70px Arial;
+	text-align: center;
+	line-height: 300px;
+	color: #fff;
+}
+
+.front {
+	transform: rotateY(30deg) translateZ(87px);
+}
+
+/* .back {
+	transform: rotateY(180deg) translateZ(150px);
+} */
+
+.right {
+	transform:rotateY(150deg) translateZ(86px);
+}
+
+.left {
+	transform: rotateY(-90deg) translateZ(86px);
+}
+
+.top {
+	transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+	transform: rotateX(-90deg) translateZ(150px);
+}
+
+img {
+  pointer-events: none;
+}
