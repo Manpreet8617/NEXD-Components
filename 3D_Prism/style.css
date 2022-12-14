@@ -14,7 +14,7 @@ body {
 	perspective: 500px;
 }
 
-.cube {
+.prism {
 	width: inherit;
 	height: inherit;
 	transform-style: preserve-3d;

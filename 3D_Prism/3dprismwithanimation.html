@@ -54,7 +54,7 @@
     obcaecati quos ea saepe! Asperiores neque libero nam dolores laborum consequatur facere ex officiis nulla.
   </div>
   <div class="container">
-    <div class="cube">
+    <div class="prism">
       <div class="side front"><img src="https://images.unsplash.com/photo-1670969548019-18ec1aae8abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" height="100%" width="100%"
           alt=""></div>
       <div class="side right"><img src="https://images.unsplash.com/photo-1664574652984-5b5f769bef07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" height="100%" width="100%" alt="">
@@ -170,7 +170,7 @@
   </section>
   <script>
    
-  // Scroll animation 3d cube movement
+  // Scroll animation 3d prism movement
       $(window).scroll(function trucenscroll(event) {
         var lastScrollLeft = 0;
         var sl = $(this).scrollTop();
@@ -183,7 +183,7 @@
           var srotatex = "rotateX(" + sl + "deg)";
           var size = 100 + sl + "vw";
 
-          $(".cube").css({ "-moz-transform": srotatey, "-webkit-transform": srotatey });
+          $(".prism").css({ "-moz-transform": srotatey, "-webkit-transform": srotatey });
 
 
         }
@@ -193,7 +193,7 @@
         else {
           var srotatey = "rotateY(" + sl + "deg)";
           var srotatex = "rotateX(" + sl + "deg)";
-          $(".cube").css({ "-moz-transform": srotatey, "-webkit-transform": srotatey });
+          $(".prism").css({ "-moz-transform": srotatey, "-webkit-transform": srotatey });
         }
       });
    //*********************************************************************** 
@@ -223,7 +223,7 @@
       rotY -= deltaX * -0.1;
       rotX += deltaY * -0.1;
 
-      $(".cube").css("transform", "translateZ(0px) rotateX( " + 0 + "deg) rotateY(" + rotY + "deg)");
+      $(".prism").css("transform", "translateZ(0px) rotateX( " + 0 + "deg) rotateY(" + rotY + "deg)");
 
       // *************************************************************
     
